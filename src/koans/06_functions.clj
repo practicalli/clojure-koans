@@ -3,7 +3,7 @@
 
 (defn square [n] (* n n))
 
-(meditations
+
   "Functions are often defined before they are used"
   (= __ (multiply-by-ten 2))
 
@@ -26,4 +26,4 @@
          (fn [n] (* n n))))
 
   "But they are often better written using the names of functions"
-  (= 25 (___ square)))
+  (= 25 (___ square))

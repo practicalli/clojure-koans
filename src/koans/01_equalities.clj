@@ -1,21 +1,23 @@
-(meditations
-  "We shall contemplate truth by testing reality, via equality."
-  (= __ true)
+;; What is truth?
 
-  "To understand reality, we must compare our expectations against reality."
+;; true, false, 0, 1, nil, not false
+
+(= __ true)
+
+;  "To understand reality, we must compare our expectations against reality."
   (= __ (+ 1 1))
 
-  "You can test equality of many things"
+;  "You can test equality of many things"
   (= (+ 3 4) __ (+ 2 __))
 
-  "Some things may appear different, but be the same"
+;  "Some things may appear different, but be the same"
   (= 2 2/1 __)
 
-  "You cannot generally float to heavens of integers"
+;  "You cannot generally float to heavens of integers"
   (= __ (= 2 2.0))
 
-  "But a looser equality is also possible"
-  (== 2.0 2 __)
+;  "But a looser equality is also possible"
+  (== 2.0 2 2/1)
 
-  "When things cannot be equal, they must be different"
-  (not= :fill-in-the-blank __))
+;  "When things cannot be equal, they must be different"
+  (not= :fill-in-the-blank __)

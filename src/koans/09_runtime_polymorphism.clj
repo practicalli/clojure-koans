@@ -11,7 +11,7 @@
 (defmethod diet :carnivore [a] __)
 (defmethod diet :default [a] __)
 
-(meditations
+
   "Some functions can be used in different ways - with no arguments"
   (= __ (hello))
 
@@ -32,4 +32,4 @@
 
   "You may use a default method when no others match"
   (= "I don't know what Rich Hickey eats."
-     (diet {:name "Rich Hickey"})))
+     (diet {:name "Rich Hickey"}))

@@ -17,7 +17,7 @@
   (present [this recipient]
     __))
 
-(meditations
+
   "Holding records is meaningful only when the record is worthy of you"
   (= __ (.prize (Nobel. "peace")))
 
@@ -41,4 +41,4 @@
 
   "Surely we can implement our own by now"
   (= "You're really the Worst Picture, Final Destination 5... sorry."
-     (with-out-str (present (Razzie. "Worst Picture") "Final Destination 5"))))
+     (with-out-str (present (Razzie. "Worst Picture") "Final Destination 5")))

@@ -3,7 +3,7 @@
    :city "Testerville"
    :state "TX"})
 
-(meditations
+
   "Destructuring is an arbiter: it breaks up arguments"
   (= __ ((fn [[a b]] (str b a))
          [:foo :bar]))
@@ -38,4 +38,4 @@
 
   "All together now!"
   (= "Test Testerson, 123 Test Lane, Testerville, TX"
-     (___ ["Test" "Testerson"] test-address)))
+     (___ ["Test" "Testerson"] test-address))

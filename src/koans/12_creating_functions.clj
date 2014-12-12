@@ -1,6 +1,6 @@
 (defn square [x] (* x x))
 
-(meditations
+
   "One may know what they seek by knowing what they do not seek"
   (= [__ __ __] (let [not-a-symbol? (complement symbol?)]
                   (map not-a-symbol? [:a 'b "c"])))
@@ -29,4 +29,4 @@
 
   "Be careful about the order in which you mix your functions"
   (= 99 (let [square-and-dec ___]
-          (square-and-dec 10))))
+          (square-and-dec 10)))

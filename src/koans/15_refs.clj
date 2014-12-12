@@ -1,7 +1,7 @@
 (def the-world (ref "hello"))
 (def bizarro-world (ref {}))
 
-(meditations
+
   "In the beginning, there was a word"
   (= __ (deref the-world))
 
@@ -36,4 +36,4 @@
           (ref-set the-world {})
           (alter the-world assoc :jerry "Real Jerry")
           (alter bizarro-world assoc :jerry "Bizarro Jerry")
-          __))))
+          __)))

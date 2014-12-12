@@ -1,4 +1,3 @@
-(meditations
   "There are two ways to create maps"
   (= __ (hash-map))
 
@@ -47,4 +46,4 @@
 
   "Or the values"
   (= (list "Sochi" "Torino" __)
-     (sort (vals {2006 "Torino" 2010 "Vancouver" 2014 "Sochi"}))))
+     (sort (vals {2006 "Torino" 2010 "Vancouver" 2014 "Sochi"})))

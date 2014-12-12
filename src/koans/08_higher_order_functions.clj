@@ -1,4 +1,3 @@
-(meditations
   "The map function relates a sequence to another"
   (= [__ __ __] (map (fn [x] (* 4 x)) [1 2 3]))
 
@@ -29,4 +28,4 @@
   "Numbers are not the only things one can reduce"
   (= "longest" (reduce (fn [a b]
                          (if (< __ __) b a))
-                       ["which" "word" "is" "longest"])))
+                       ["which" "word" "is" "longest"]))

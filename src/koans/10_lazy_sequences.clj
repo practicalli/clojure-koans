@@ -1,4 +1,3 @@
-(meditations
   "There is a wide range of ways to generate a sequence"
   (= __ (range 1 5))
 
@@ -22,4 +21,4 @@
 
   "Iteration can be used for repetition"
   (= (repeat 100 :foo)
-     (take 100 (iterate ___ :foo))))
+     (take 100 (iterate ___ :foo)))
