@@ -1,121 +1,32 @@
-# Clojure Koans
+# Clojure Koans (for Lighttable and other IDEs)
 
 The Clojure Koans are a fun and easy way to get started with Clojure - no
-experience assumed or required.  Just follow the instructions below to start
-making tests pass!
+experience assumed or required.  The Koans are incomplete lines of code where you have to fill in the missing expression to make the test pass.
+
+The Clojure Koans are organised by different aspects of the Clojure language.
+
+In this version of the Koans, I have removed the _mediations_ so you can simply load the project up into **Lighttable** and use the **Instareple** to help you evaluate the code.
+
 
 
 ### Getting Started
 
-The easiest and fastest way to get the koans up and running is to [download the
-latest zip file from Github](https://github.com/functional-koans/clojure-koans/downloads).
-This way, you'll have all the dependencies you need, including Clojure itself
-and JLine, and you can skip the rest of this section (skip to "Running the
-Koans").
+  Run the latest version of [Lighttable](http://lighttable.com).
 
-If you're starting from a cloned or forked repo, that's cool too. This way
-you'll be able to track your progress in Git, and see how your answers compare
-to others, by checking out the project's Network tab. You might want to create your
-own branch - that way if you pull back the latest koans from master, it'll be a bit
-easier to manage the inevitable conflicts if we make changes to exercises you've already
-completed.
+  Clone this project to your computer using a Git client, eg:
 
-The only things you'll need to run the Clojure Koans are:
+    git clone https://github.com/practicalli/lighttable-koans.git
 
-- JRE 1.5 or higher
-- [clojure-1.3.0.jar](http://repo1.maven.org/maven2/org/clojure/clojure/1.3.0/clojure-1.3.0.zip)
+  Load the cloned project directory into Lighttable
 
-clojure-1.3.0.jar needs to be in a directory `lib` under this project.
+  Open one of the source files in the project using the workspace manager of Lighttable, eg `src/koans/01_equalities.clj`
 
-You can use [Leiningen](http://github.com/technomancy/leiningen) to
-automatically install the Clojure jar in the right place. Leiningen will also
-get you a couple more jarfiles, including JLine, which allows you some of the
-functionality of readline (command-line history, for example).
+  Start an _Instarepl_ for the project `Ctrl-space Make current editor an Istarepl`
 
-After you have leiningen installed, run
-
-`lein deps`
-
-which will download all dependencies you need to run the Clojure koans.
+  Lighttable will now resolve all the depenendices for this project and start the interactive Clojure environment, the REPL.  Once the blue Lighttable icon stops spinning, you can start filling in the blanks of the code and seeing if you have correctly completed the code.
 
 
-### Running the Koans
-
-To run the koans, simply run
-
-`script/run` on Mac/\*nix
-
-`script\run` on Windows
-
-It's an auto-runner, so as you save your files with the correct answers, it will
-advance you to the next koan or file.
-
-You'll see something like this:
-
-    Problem in  /home/colin/Projects/clojure-koans/src/koans/equalities.clj
-    ---------------------
-    Assertion failed!
-    We shall contemplate truth by testing reality, via equality.
-    (= __ true)
-
-The output is telling you that you have a failing test in equalities.clj.
-So open that file up and make it pass!  In general, you just fill in the
-blanks to make tests pass.  Sometimes there are several (or even an infinite
-number) of correct answers: any of them will work in these cases.
-
-The koans differ from normal TDD in that the tests are already written for you,
-so you'll have to pay close attention to the failure messages, because up until
-the very end, making a test pass just means that the next failure message comes
-up.
-
-While it might be easy (especially at first) to just fill in the blanks making
-things pass, you should work thoughtfully, making sure you understand why the
-answer is what it is.  Enjoy your path to Clojure enlightenment!
-
-
-### Trying more things out
-
-There's a REPL (Read-Evaluate-Print Loop) included in the Clojure Koans. Just
-run:
-
-`script/repl` on Mac/\*nix
-
-`script\repl` on Windows
-
-Here are some interesting commands you might try, once you're in a running REPL:
-
-```clojure
-(find-doc "vec")
-(find-doc #"vec$")
-(doc vec)
-```
-
-And if those still don't make sense:
-
-```clojure
-(doc doc)
-(doc find-doc)
-```
-
-will show you what those commands mean.
-
-You can exit the REPL with `CTRL-d` on any OS.
-
-
-### Contributing
-
-Patches are encouraged!  Make sure the answer sheet still passes (`script/test`,
-or `script\test` on Windows), and send a pull request.
-
-The file ideaboard.txt has lots of good ideas for new koans to start, or things
-to add to existing koans.  So write some fun exercises, add your answers to
-`resources/koans.clj`, and we'll get them in there!
-
-Feel free to contact me (Colin Jones / trptcolin) on Github or elsewhere if you
-have any questions or want more direction before you start pitching in.
-
-
-### Contributors
+### Contributors to the Original project
 
 https://github.com/functional-koans/clojure-koans/contributors
 
